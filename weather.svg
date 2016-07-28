@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg:svg xmlns:svg="http://www.w3.org/2000/svg" height="12in" version="1.1" viewBox="0 0 120 120" width="12in">
+   <svg:rect fill="white" height="120" width="120" x="0" y="0" />
+   <svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="8" font-weight="normal" text-anchor="middle" x="15.0" y="15.0">&#x2600;<!--Black Sun with rays 2600--></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="8" font-weight="normal" text-anchor="middle" x="25.0" y="15.0">&#x1f323;<!--White sun 1F323--></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="8" font-weight="normal" text-anchor="middle" x="35.0" y="15.0">&#x263c;<!--White sun with rays 263c--></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="8" font-weight="normal" text-anchor="middle" x="45.0" y="15.0">&#x26c5;<!--Sun behind cloud 26c5--></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="sans-serif" font-size="8" font-weight="normal" text-anchor="middle" x="55.0" y="15.0">&#x1F324;<!--Sun behind cloud 1F324--></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="6" font-weight="normal" text-anchor="middle" x="65.0" y="15.0">&#x1F325;<!--Sun behind cloud 1F325--></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="75.0" y="15.0"></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="85.0" y="15.0">&#x2746;<!--Heavy Snowflake 2746--></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="95.0" y="15.0">&#x1F328;<!--Cloud with snow 1F328--></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="105.0" y="15.0">&#x2744;<!--Snowflake 2744--></svg:text>
+      </svg:g>
+
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="15.0" y="35.0">&#x1f300;<!--Cyclone 1f300--></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="25.0" y="35.0">&#x1f32a;<!--Cloud with tornado 1f32a--></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="35.0" y="35.0">&#x1f32c;<!--Wind blowy face 1f32c--></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="45.0" y="35.0"><!----></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="55.0" y="35.0">&#x1f321;<!--Thermometer--></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="65.0" y="35.0"><!----></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="75.0" y="35.0">&#x1f319;<!--Crescent Moon--></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="85.0" y="35.0"><!----></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="95.0" y="35.0"><!----></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="105.0" y="35.0"><!----></svg:text>
+      </svg:g>
+
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="15.0" y="55.0">&#x2602;<!--Umbrella 2602--></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="25.0" y="55.0">&#x1f327;<!--Cloud with rain 1F327--></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="35.0" y="55.0">&#x26c6;<!--Rain 26c6--></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="45.0" y="55.0">&#x2614;<!--Umbrella with Rain 2614--></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="55.0" y="55.0">&#x2608;<!--Thunderstorm--></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="65.0" y="55.0">&#x2607;<!--Lightning--></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="75.0" y="55.0">&#x26c8;<!--Thunder Cloud with Rain--></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="85.0" y="55.0">&#x1f584;<!--Lightning mood 1f584--></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="95.0" y="55.0">&#x1F329;<!--Cloud with lightning 1F329--></svg:text>
+      </svg:g>
+      <svg:g>
+         <svg:text alignment-baseline="middle" fill="black" font-family="TC_Lasersans" font-size="11" font-weight="normal" text-anchor="middle" x="105.0" y="55.0">&#x26A1;<!--High Voltage Sign 26a1--></svg:text>
+      </svg:g>
+      
+   </svg:g>
+</svg:svg>
