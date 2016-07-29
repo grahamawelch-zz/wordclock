@@ -87,7 +87,7 @@ def MakeTimeRequest():
   if not TIMEZONE:
     SetTimezone()
   return MakeRequest(
-      BuildTimeRequestUrl(TIMEZONE),
-      'samples/sample_time.txt',
-      is_json=False
-    )
+    BuildTimeRequestUrl(TIMEZONE),
+    'samples/sample_time.txt',
+    is_json=False
+  )
