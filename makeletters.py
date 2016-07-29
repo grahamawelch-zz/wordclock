@@ -4,57 +4,50 @@
 from xml.etree.ElementTree import QName, ElementTree, Element, SubElement, register_namespace
 from sys import stdout, stderr
 
+# https://erikflowers.github.io/weather-icons/
+WEATHER = 'Weather Icons'
 
-SAN_SERIF = 'sans-serif'
 FONT = 'TC_Lasersans'
-SIZE = '11'
+SIZE = '10'
+
+MIDDLE = '0%'
+TOP = '20%'
 
 SHOW_REC = False
 
-REC_FILL = 'green' if SHOW_REC else 'white'
-LET_FILL = 'white' if SHOW_REC else 'black'
+REC_FILL = 'green'
+LET_FILL = 'black'
 
 
 # Numbers map to indices in special_tuple
 rows = [
-    "012345HALF",
-    "TWENTYFIVE",
-    "TENQUARTER",
-    "ITPASTISTO",
-    "ONESIXNINE",
-    "THREESEVEN",
-    "ELEVENFIVE",
-    "TENFOURTWO",
-    "EIGHTWELVE",
-    "OCLOCK6789"]
+    '012345HALF',
+    'TWENTYFIVE',
+    'QUARTERTEN',
+    'ITPASTISTO',
+    'ONESIXNINE',
+    'THREESEVEN',
+    'ELEVENFIVE',
+    'TENFOURTWO',
+    'EIGHTWELVE',
+    'OCLOCKampm']
 
 
 # LETTER, SIZE, FONT
 special_tuple = [
-    ('☀', '8', FONT),        #'&#x2600',   # sun
-    ('☁', '8', FONT),        #&#x2601',   # cloud
-    ('☂', '8', FONT),        #&#x2602',   # umbrella
-    ('❄', '8', FONT),        #&#x2744',   # snow flake
-    ('🌪', '8', SAN_SERIF),        #&#x1F32A',   # Cloud with tornado
-    ('⚡', '6', FONT),        #&#x26A1',   # lightning bolt
-    ('XX', '6', FONT),       # XX
-    ('GW', '6', FONT),       # GW
-    ('AM', '6', FONT),       # AM
-    ('PM', '6', FONT),       # PM
+    ('', '7', WEATHER, MIDDLE), # SUN f00d
+    ('', '7', WEATHER, MIDDLE), # CLOUD f041
+    ('', '7', WEATHER, TOP), # RAIN f019 ALT: f01c (sprinkles), f04e (drops)
+    ('', '7', WEATHER, TOP), # STORM f01e ALT: f01d (storm shower)
+    ('', '7', WEATHER, TOP), # SNOW f01b
+    ('', '7', WEATHER, MIDDLE), # WIND f050 ALT: f011 (cloudy gusts)
 ]
-
-# More weather unicode at http://www.unicode.org/charts/PDF/U1F300.pdf
-# Cyclone 🌀 &#x1F300
-# Cloud with Tornado 🌪 &#x1F32A
-
-# Cloud with Sun
-# Cloud with Rain
 
 
 class SVG(object):
     def __getattr__(self, name):
         def f(*children, **kwargs):
-            qname = QName("http://www.w3.org/2000/svg", name)
+            qname = QName('http://www.w3.org/2000/svg', name)
             e = Element(qname, **kwargs)
             e.extend(children)
             return e
@@ -64,17 +57,18 @@ class SVG(object):
 svg = SVG()
 
 
-def NormalLetter(letter_x, letter_y, letter, font=FONT, size=SIZE):
+def NormalLetter(letter_x, letter_y, letter, font=FONT, size=SIZE, shift='0%'):
     label = svg.text(
         x=letter_x,
         y=letter_y,
         fill=LET_FILL,
         attrib={
-            "font-family": font,
-            "font-size": size,
-            "font-weight": "normal",
-            "text-anchor": "middle",
-            "alignment-baseline": "middle",
+            'font-family': font,
+            'font-size': size,
+            'font-weight': 'normal',
+            'text-anchor': 'middle',
+            'alignment-baseline': 'middle',
+            'baseline-shift': shift
         }
     )
     label.text = letter
@@ -85,24 +79,27 @@ def SpecialLetter(letter_x, letter_y, index):
     tuple = special_tuple[index]
 
     return NormalLetter(
-        letter_x, 
-        letter_y, 
-        tuple[0].decode('utf-8'), 
+        letter_x,
+        letter_y,
+        tuple[0].decode('utf-8'),
         font=tuple[2],
-        size=tuple[1])
+        size=tuple[1],
+        shift=tuple[3])
 
 
 def BuildGrid():
-    register_namespace('svg', "http://www.w3.org/2000/svg")
+    register_namespace('svg', 'http://www.w3.org/2000/svg')
 
     root = svg.svg(
-        # fill
-        svg.rect(x="0", y="0", width="120", height="120", fill=REC_FILL),
-        width="12in",
-        height="12in",
-        viewBox="0 0 120 120",
-        version="1.1",
+        width='12in',
+        height='12in',
+        viewBox='0 0 120 120',
+        version='1.1',
     );
+
+    if (SHOW_REC):
+        root.append(
+            svg.rect(x='0', y='0', width='120', height='120', fill=REC_FILL))
 
     letters_elem = svg.g()
 
@@ -126,9 +123,9 @@ def BuildGrid():
             letter_y = str(py + .5 * y_inc)
 
             rect = rect = svg.rect(
-                x=str(px), 
-                y=str(py), 
-                width=str(x_inc), 
+                x=str(px),
+                y=str(py),
+                width=str(x_inc),
                 height=str(x_inc),
                 fill='red',
                 stroke='blue')
@@ -143,7 +140,7 @@ def BuildGrid():
                 sub.append(rect)
 
             sub.append(label)
-            
+
             letters_elem.append(sub)
 
             x += 1
