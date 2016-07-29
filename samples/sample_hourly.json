@@ -1,0 +1,913 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "hourly": 1
+  }
+	}
+		,
+	"hourly_forecast": [
+		{
+		"FCTTIME": {
+		"hour": "0","hour_padded": "00","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469775600","pretty": "12:00 AM PDT on July 29, 2016","civil": "12:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "69", "metric": "21"},
+		"dewpoint": {"english": "58", "metric": "14"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_clear.gif",
+		"fctcode": "1",
+		"sky": "1",
+		"wspd": {"english": "5", "metric": "8"},
+		"wdir": {"dir": "NNE", "degrees": "23"},
+		"wx": "Clear",
+		"uvi": "0",
+		"humidity": "66",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "69", "metric": "21"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "0",
+		"mslp": {"english": "30.03", "metric": "1017"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "1","hour_padded": "01","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469779200","pretty": "1:00 AM PDT on July 29, 2016","civil": "1:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "67", "metric": "19"},
+		"dewpoint": {"english": "57", "metric": "14"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_clear.gif",
+		"fctcode": "1",
+		"sky": "1",
+		"wspd": {"english": "4", "metric": "6"},
+		"wdir": {"dir": "NNE", "degrees": "20"},
+		"wx": "Clear",
+		"uvi": "0",
+		"humidity": "70",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "67", "metric": "19"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "0",
+		"mslp": {"english": "30.03", "metric": "1017"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "2","hour_padded": "02","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469782800","pretty": "2:00 AM PDT on July 29, 2016","civil": "2:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "66", "metric": "19"},
+		"dewpoint": {"english": "57", "metric": "14"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_clear.gif",
+		"fctcode": "1",
+		"sky": "1",
+		"wspd": {"english": "3", "metric": "5"},
+		"wdir": {"dir": "NNE", "degrees": "16"},
+		"wx": "Clear",
+		"uvi": "0",
+		"humidity": "74",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "66", "metric": "19"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "0",
+		"mslp": {"english": "30.03", "metric": "1017"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "3","hour_padded": "03","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469786400","pretty": "3:00 AM PDT on July 29, 2016","civil": "3:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "63", "metric": "17"},
+		"dewpoint": {"english": "56", "metric": "13"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_clear.gif",
+		"fctcode": "1",
+		"sky": "0",
+		"wspd": {"english": "2", "metric": "3"},
+		"wdir": {"dir": "NNE", "degrees": "13"},
+		"wx": "Clear",
+		"uvi": "0",
+		"humidity": "78",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "63", "metric": "17"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "0",
+		"mslp": {"english": "30.02", "metric": "1017"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "4","hour_padded": "04","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469790000","pretty": "4:00 AM PDT on July 29, 2016","civil": "4:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "62", "metric": "17"},
+		"dewpoint": {"english": "56", "metric": "13"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_clear.gif",
+		"fctcode": "1",
+		"sky": "0",
+		"wspd": {"english": "2", "metric": "3"},
+		"wdir": {"dir": "N", "degrees": "8"},
+		"wx": "Clear",
+		"uvi": "0",
+		"humidity": "81",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "62", "metric": "17"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "3",
+		"mslp": {"english": "30.01", "metric": "1016"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "5","hour_padded": "05","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469793600","pretty": "5:00 AM PDT on July 29, 2016","civil": "5:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "61", "metric": "16"},
+		"dewpoint": {"english": "56", "metric": "13"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_clear.gif",
+		"fctcode": "1",
+		"sky": "0",
+		"wspd": {"english": "2", "metric": "3"},
+		"wdir": {"dir": "N", "degrees": "3"},
+		"wx": "Clear",
+		"uvi": "0",
+		"humidity": "82",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "61", "metric": "16"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "4",
+		"mslp": {"english": "30.01", "metric": "1016"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "6","hour_padded": "06","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469797200","pretty": "6:00 AM PDT on July 29, 2016","civil": "6:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "62", "metric": "17"},
+		"dewpoint": {"english": "56", "metric": "13"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"fctcode": "1",
+		"sky": "0",
+		"wspd": {"english": "2", "metric": "3"},
+		"wdir": {"dir": "N", "degrees": "0"},
+		"wx": "Sunny",
+		"uvi": "0",
+		"humidity": "82",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "62", "metric": "17"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "6",
+		"mslp": {"english": "30.01", "metric": "1016"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "7","hour_padded": "07","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469800800","pretty": "7:00 AM PDT on July 29, 2016","civil": "7:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "63", "metric": "17"},
+		"dewpoint": {"english": "57", "metric": "14"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"fctcode": "1",
+		"sky": "0",
+		"wspd": {"english": "3", "metric": "5"},
+		"wdir": {"dir": "N", "degrees": "6"},
+		"wx": "Sunny",
+		"uvi": "0",
+		"humidity": "81",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "63", "metric": "17"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "5",
+		"mslp": {"english": "30.02", "metric": "1017"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "8","hour_padded": "08","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469804400","pretty": "8:00 AM PDT on July 29, 2016","civil": "8:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "66", "metric": "19"},
+		"dewpoint": {"english": "58", "metric": "14"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"fctcode": "1",
+		"sky": "0",
+		"wspd": {"english": "4", "metric": "6"},
+		"wdir": {"dir": "N", "degrees": "353"},
+		"wx": "Sunny",
+		"uvi": "1",
+		"humidity": "75",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "66", "metric": "19"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "3",
+		"mslp": {"english": "30.02", "metric": "1017"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "9","hour_padded": "09","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469808000","pretty": "9:00 AM PDT on July 29, 2016","civil": "9:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "68", "metric": "20"},
+		"dewpoint": {"english": "58", "metric": "14"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"fctcode": "1",
+		"sky": "0",
+		"wspd": {"english": "5", "metric": "8"},
+		"wdir": {"dir": "NNW", "degrees": "342"},
+		"wx": "Sunny",
+		"uvi": "2",
+		"humidity": "71",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "68", "metric": "20"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "2",
+		"mslp": {"english": "30.01", "metric": "1016"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "10","hour_padded": "10","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469811600","pretty": "10:00 AM PDT on July 29, 2016","civil": "10:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "71", "metric": "22"},
+		"dewpoint": {"english": "59", "metric": "15"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"fctcode": "1",
+		"sky": "0",
+		"wspd": {"english": "6", "metric": "10"},
+		"wdir": {"dir": "NNW", "degrees": "334"},
+		"wx": "Sunny",
+		"uvi": "3",
+		"humidity": "66",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "71", "metric": "22"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "1",
+		"mslp": {"english": "30.01", "metric": "1016"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "11","hour_padded": "11","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469815200","pretty": "11:00 AM PDT on July 29, 2016","civil": "11:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "73", "metric": "23"},
+		"dewpoint": {"english": "59", "metric": "15"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"fctcode": "1",
+		"sky": "0",
+		"wspd": {"english": "7", "metric": "11"},
+		"wdir": {"dir": "NNW", "degrees": "330"},
+		"wx": "Sunny",
+		"uvi": "5",
+		"humidity": "62",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "73", "metric": "23"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "0",
+		"mslp": {"english": "29.99", "metric": "1016"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "12","hour_padded": "12","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469818800","pretty": "12:00 PM PDT on July 29, 2016","civil": "12:00 PM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "PM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "75", "metric": "24"},
+		"dewpoint": {"english": "59", "metric": "15"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"fctcode": "1",
+		"sky": "0",
+		"wspd": {"english": "8", "metric": "13"},
+		"wdir": {"dir": "NW", "degrees": "323"},
+		"wx": "Sunny",
+		"uvi": "6",
+		"humidity": "58",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "75", "metric": "24"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "0",
+		"mslp": {"english": "29.98", "metric": "1015"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "13","hour_padded": "13","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469822400","pretty": "1:00 PM PDT on July 29, 2016","civil": "1:00 PM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "PM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "77", "metric": "25"},
+		"dewpoint": {"english": "59", "metric": "15"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"fctcode": "1",
+		"sky": "0",
+		"wspd": {"english": "8", "metric": "13"},
+		"wdir": {"dir": "NNW", "degrees": "329"},
+		"wx": "Sunny",
+		"uvi": "7",
+		"humidity": "53",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "77", "metric": "25"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "0",
+		"mslp": {"english": "29.97", "metric": "1015"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "14","hour_padded": "14","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469826000","pretty": "2:00 PM PDT on July 29, 2016","civil": "2:00 PM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "PM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "79", "metric": "26"},
+		"dewpoint": {"english": "58", "metric": "14"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"fctcode": "1",
+		"sky": "0",
+		"wspd": {"english": "9", "metric": "14"},
+		"wdir": {"dir": "NNW", "degrees": "329"},
+		"wx": "Sunny",
+		"uvi": "7",
+		"humidity": "48",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "79", "metric": "26"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "0",
+		"mslp": {"english": "29.96", "metric": "1015"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "15","hour_padded": "15","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469829600","pretty": "3:00 PM PDT on July 29, 2016","civil": "3:00 PM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "PM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "81", "metric": "27"},
+		"dewpoint": {"english": "56", "metric": "13"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"fctcode": "1",
+		"sky": "1",
+		"wspd": {"english": "9", "metric": "14"},
+		"wdir": {"dir": "NNW", "degrees": "333"},
+		"wx": "Sunny",
+		"uvi": "6",
+		"humidity": "44",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "81", "metric": "27"},
+		"feelslike": {"english": "81", "metric": "27"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "0",
+		"mslp": {"english": "29.94", "metric": "1014"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "16","hour_padded": "16","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469833200","pretty": "4:00 PM PDT on July 29, 2016","civil": "4:00 PM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "PM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "82", "metric": "28"},
+		"dewpoint": {"english": "55", "metric": "13"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"fctcode": "1",
+		"sky": "2",
+		"wspd": {"english": "9", "metric": "14"},
+		"wdir": {"dir": "NNW", "degrees": "347"},
+		"wx": "Sunny",
+		"uvi": "4",
+		"humidity": "41",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "82", "metric": "28"},
+		"feelslike": {"english": "82", "metric": "28"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "0",
+		"mslp": {"english": "29.93", "metric": "1014"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "17","hour_padded": "17","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469836800","pretty": "5:00 PM PDT on July 29, 2016","civil": "5:00 PM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "PM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "83", "metric": "28"},
+		"dewpoint": {"english": "55", "metric": "13"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"fctcode": "1",
+		"sky": "5",
+		"wspd": {"english": "8", "metric": "13"},
+		"wdir": {"dir": "N", "degrees": "351"},
+		"wx": "Sunny",
+		"uvi": "3",
+		"humidity": "39",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "82", "metric": "28"},
+		"feelslike": {"english": "82", "metric": "28"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "0",
+		"mslp": {"english": "29.92", "metric": "1013"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "18","hour_padded": "18","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469840400","pretty": "6:00 PM PDT on July 29, 2016","civil": "6:00 PM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "PM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "82", "metric": "28"},
+		"dewpoint": {"english": "55", "metric": "13"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"fctcode": "1",
+		"sky": "5",
+		"wspd": {"english": "8", "metric": "13"},
+		"wdir": {"dir": "N", "degrees": "353"},
+		"wx": "Sunny",
+		"uvi": "1",
+		"humidity": "40",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "82", "metric": "28"},
+		"feelslike": {"english": "82", "metric": "28"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "0",
+		"mslp": {"english": "29.9", "metric": "1013"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "19","hour_padded": "19","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469844000","pretty": "7:00 PM PDT on July 29, 2016","civil": "7:00 PM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "PM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "80", "metric": "27"},
+		"dewpoint": {"english": "55", "metric": "13"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"fctcode": "1",
+		"sky": "2",
+		"wspd": {"english": "7", "metric": "11"},
+		"wdir": {"dir": "N", "degrees": "351"},
+		"wx": "Sunny",
+		"uvi": "0",
+		"humidity": "42",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "81", "metric": "27"},
+		"feelslike": {"english": "80", "metric": "27"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "0",
+		"mslp": {"english": "29.9", "metric": "1013"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "20","hour_padded": "20","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469847600","pretty": "8:00 PM PDT on July 29, 2016","civil": "8:00 PM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "PM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "77", "metric": "25"},
+		"dewpoint": {"english": "56", "metric": "13"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"fctcode": "1",
+		"sky": "5",
+		"wspd": {"english": "6", "metric": "10"},
+		"wdir": {"dir": "N", "degrees": "354"},
+		"wx": "Sunny",
+		"uvi": "0",
+		"humidity": "47",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "77", "metric": "25"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "0",
+		"mslp": {"english": "29.89", "metric": "1012"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "21","hour_padded": "21","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469851200","pretty": "9:00 PM PDT on July 29, 2016","civil": "9:00 PM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "PM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "74", "metric": "23"},
+		"dewpoint": {"english": "56", "metric": "13"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_clear.gif",
+		"fctcode": "1",
+		"sky": "24",
+		"wspd": {"english": "6", "metric": "10"},
+		"wdir": {"dir": "N", "degrees": "351"},
+		"wx": "Mostly Clear",
+		"uvi": "0",
+		"humidity": "54",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "74", "metric": "23"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "0",
+		"mslp": {"english": "29.9", "metric": "1013"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "22","hour_padded": "22","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469854800","pretty": "10:00 PM PDT on July 29, 2016","civil": "10:00 PM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "PM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "70", "metric": "21"},
+		"dewpoint": {"english": "57", "metric": "14"},
+		"condition": "Partly Cloudy",
+		"icon": "partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+		"fctcode": "2",
+		"sky": "33",
+		"wspd": {"english": "5", "metric": "8"},
+		"wdir": {"dir": "N", "degrees": "352"},
+		"wx": "Partly Cloudy",
+		"uvi": "0",
+		"humidity": "62",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "70", "metric": "21"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "2",
+		"mslp": {"english": "29.91", "metric": "1013"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "23","hour_padded": "23","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "29","mday_padded": "29","yday": "210","isdst": "1","epoch": "1469858400","pretty": "11:00 PM PDT on July 29, 2016","civil": "11:00 PM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Friday","weekday_name_night": "Friday Night","weekday_name_abbrev": "Fri","weekday_name_unlang": "Friday","weekday_name_night_unlang": "Friday Night","ampm": "PM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "68", "metric": "20"},
+		"dewpoint": {"english": "56", "metric": "13"},
+		"condition": "Partly Cloudy",
+		"icon": "partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+		"fctcode": "2",
+		"sky": "30",
+		"wspd": {"english": "5", "metric": "8"},
+		"wdir": {"dir": "N", "degrees": "353"},
+		"wx": "Partly Cloudy",
+		"uvi": "0",
+		"humidity": "66",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "68", "metric": "20"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "3",
+		"mslp": {"english": "29.91", "metric": "1013"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "0","hour_padded": "00","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "30","mday_padded": "30","yday": "211","isdst": "1","epoch": "1469862000","pretty": "12:00 AM PDT on July 30, 2016","civil": "12:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Saturday","weekday_name_night": "Saturday Night","weekday_name_abbrev": "Sat","weekday_name_unlang": "Saturday","weekday_name_night_unlang": "Saturday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "66", "metric": "19"},
+		"dewpoint": {"english": "56", "metric": "13"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_clear.gif",
+		"fctcode": "1",
+		"sky": "25",
+		"wspd": {"english": "5", "metric": "8"},
+		"wdir": {"dir": "NNW", "degrees": "349"},
+		"wx": "Mostly Clear",
+		"uvi": "0",
+		"humidity": "71",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "66", "metric": "19"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "4",
+		"mslp": {"english": "29.91", "metric": "1013"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "1","hour_padded": "01","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "30","mday_padded": "30","yday": "211","isdst": "1","epoch": "1469865600","pretty": "1:00 AM PDT on July 30, 2016","civil": "1:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Saturday","weekday_name_night": "Saturday Night","weekday_name_abbrev": "Sat","weekday_name_unlang": "Saturday","weekday_name_night_unlang": "Saturday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "64", "metric": "18"},
+		"dewpoint": {"english": "56", "metric": "13"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_clear.gif",
+		"fctcode": "1",
+		"sky": "29",
+		"wspd": {"english": "5", "metric": "8"},
+		"wdir": {"dir": "NNW", "degrees": "347"},
+		"wx": "Mostly Clear",
+		"uvi": "0",
+		"humidity": "74",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "64", "metric": "18"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "5",
+		"mslp": {"english": "29.91", "metric": "1013"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "2","hour_padded": "02","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "30","mday_padded": "30","yday": "211","isdst": "1","epoch": "1469869200","pretty": "2:00 AM PDT on July 30, 2016","civil": "2:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Saturday","weekday_name_night": "Saturday Night","weekday_name_abbrev": "Sat","weekday_name_unlang": "Saturday","weekday_name_night_unlang": "Saturday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "63", "metric": "17"},
+		"dewpoint": {"english": "56", "metric": "13"},
+		"condition": "Partly Cloudy",
+		"icon": "partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+		"fctcode": "2",
+		"sky": "30",
+		"wspd": {"english": "4", "metric": "6"},
+		"wdir": {"dir": "NNW", "degrees": "329"},
+		"wx": "Partly Cloudy",
+		"uvi": "0",
+		"humidity": "76",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "63", "metric": "17"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "5",
+		"mslp": {"english": "29.91", "metric": "1013"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "3","hour_padded": "03","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "30","mday_padded": "30","yday": "211","isdst": "1","epoch": "1469872800","pretty": "3:00 AM PDT on July 30, 2016","civil": "3:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Saturday","weekday_name_night": "Saturday Night","weekday_name_abbrev": "Sat","weekday_name_unlang": "Saturday","weekday_name_night_unlang": "Saturday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "62", "metric": "17"},
+		"dewpoint": {"english": "55", "metric": "13"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_clear.gif",
+		"fctcode": "1",
+		"sky": "26",
+		"wspd": {"english": "4", "metric": "6"},
+		"wdir": {"dir": "NW", "degrees": "314"},
+		"wx": "Mostly Clear",
+		"uvi": "0",
+		"humidity": "78",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "62", "metric": "17"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "6",
+		"mslp": {"english": "29.91", "metric": "1013"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "4","hour_padded": "04","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "30","mday_padded": "30","yday": "211","isdst": "1","epoch": "1469876400","pretty": "4:00 AM PDT on July 30, 2016","civil": "4:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Saturday","weekday_name_night": "Saturday Night","weekday_name_abbrev": "Sat","weekday_name_unlang": "Saturday","weekday_name_night_unlang": "Saturday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "61", "metric": "16"},
+		"dewpoint": {"english": "55", "metric": "13"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_clear.gif",
+		"fctcode": "1",
+		"sky": "9",
+		"wspd": {"english": "4", "metric": "6"},
+		"wdir": {"dir": "NW", "degrees": "312"},
+		"wx": "Clear",
+		"uvi": "0",
+		"humidity": "80",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "61", "metric": "16"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "6",
+		"mslp": {"english": "29.91", "metric": "1013"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "5","hour_padded": "05","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "30","mday_padded": "30","yday": "211","isdst": "1","epoch": "1469880000","pretty": "5:00 AM PDT on July 30, 2016","civil": "5:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Saturday","weekday_name_night": "Saturday Night","weekday_name_abbrev": "Sat","weekday_name_unlang": "Saturday","weekday_name_night_unlang": "Saturday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "60", "metric": "16"},
+		"dewpoint": {"english": "55", "metric": "13"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_clear.gif",
+		"fctcode": "1",
+		"sky": "9",
+		"wspd": {"english": "3", "metric": "5"},
+		"wdir": {"dir": "W", "degrees": "260"},
+		"wx": "Clear",
+		"uvi": "0",
+		"humidity": "82",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "60", "metric": "16"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "6",
+		"mslp": {"english": "29.91", "metric": "1013"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "6","hour_padded": "06","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "30","mday_padded": "30","yday": "211","isdst": "1","epoch": "1469883600","pretty": "6:00 AM PDT on July 30, 2016","civil": "6:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Saturday","weekday_name_night": "Saturday Night","weekday_name_abbrev": "Sat","weekday_name_unlang": "Saturday","weekday_name_night_unlang": "Saturday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "59", "metric": "15"},
+		"dewpoint": {"english": "55", "metric": "13"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"fctcode": "1",
+		"sky": "14",
+		"wspd": {"english": "3", "metric": "5"},
+		"wdir": {"dir": "WSW", "degrees": "247"},
+		"wx": "Sunny",
+		"uvi": "0",
+		"humidity": "84",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "59", "metric": "15"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "7",
+		"mslp": {"english": "29.92", "metric": "1013"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "7","hour_padded": "07","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "30","mday_padded": "30","yday": "211","isdst": "1","epoch": "1469887200","pretty": "7:00 AM PDT on July 30, 2016","civil": "7:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Saturday","weekday_name_night": "Saturday Night","weekday_name_abbrev": "Sat","weekday_name_unlang": "Saturday","weekday_name_night_unlang": "Saturday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "60", "metric": "16"},
+		"dewpoint": {"english": "55", "metric": "13"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"fctcode": "1",
+		"sky": "20",
+		"wspd": {"english": "4", "metric": "6"},
+		"wdir": {"dir": "SW", "degrees": "232"},
+		"wx": "Mostly Sunny",
+		"uvi": "0",
+		"humidity": "82",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "60", "metric": "16"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "6",
+		"mslp": {"english": "29.92", "metric": "1013"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "8","hour_padded": "08","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "30","mday_padded": "30","yday": "211","isdst": "1","epoch": "1469890800","pretty": "8:00 AM PDT on July 30, 2016","civil": "8:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Saturday","weekday_name_night": "Saturday Night","weekday_name_abbrev": "Sat","weekday_name_unlang": "Saturday","weekday_name_night_unlang": "Saturday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "62", "metric": "17"},
+		"dewpoint": {"english": "55", "metric": "13"},
+		"condition": "Clear",
+		"icon": "clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"fctcode": "1",
+		"sky": "26",
+		"wspd": {"english": "5", "metric": "8"},
+		"wdir": {"dir": "SW", "degrees": "227"},
+		"wx": "Mostly Sunny",
+		"uvi": "1",
+		"humidity": "77",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "62", "metric": "17"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "4",
+		"mslp": {"english": "29.93", "metric": "1014"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "9","hour_padded": "09","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "30","mday_padded": "30","yday": "211","isdst": "1","epoch": "1469894400","pretty": "9:00 AM PDT on July 30, 2016","civil": "9:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Saturday","weekday_name_night": "Saturday Night","weekday_name_abbrev": "Sat","weekday_name_unlang": "Saturday","weekday_name_night_unlang": "Saturday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "64", "metric": "18"},
+		"dewpoint": {"english": "54", "metric": "12"},
+		"condition": "Partly Cloudy",
+		"icon": "partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+		"fctcode": "2",
+		"sky": "35",
+		"wspd": {"english": "6", "metric": "10"},
+		"wdir": {"dir": "SW", "degrees": "236"},
+		"wx": "Partly Cloudy",
+		"uvi": "2",
+		"humidity": "71",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "64", "metric": "18"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "3",
+		"mslp": {"english": "29.93", "metric": "1014"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "10","hour_padded": "10","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "30","mday_padded": "30","yday": "211","isdst": "1","epoch": "1469898000","pretty": "10:00 AM PDT on July 30, 2016","civil": "10:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Saturday","weekday_name_night": "Saturday Night","weekday_name_abbrev": "Sat","weekday_name_unlang": "Saturday","weekday_name_night_unlang": "Saturday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "67", "metric": "19"},
+		"dewpoint": {"english": "54", "metric": "12"},
+		"condition": "Partly Cloudy",
+		"icon": "partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+		"fctcode": "2",
+		"sky": "43",
+		"wspd": {"english": "6", "metric": "10"},
+		"wdir": {"dir": "WSW", "degrees": "247"},
+		"wx": "Partly Cloudy",
+		"uvi": "3",
+		"humidity": "65",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "67", "metric": "19"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "1",
+		"mslp": {"english": "29.93", "metric": "1014"}
+		}
+		,
+		{
+		"FCTTIME": {
+		"hour": "11","hour_padded": "11","min": "00","min_unpadded": "0","sec": "0","year": "2016","mon": "7","mon_padded": "07","mon_abbrev": "Jul","mday": "30","mday_padded": "30","yday": "211","isdst": "1","epoch": "1469901600","pretty": "11:00 AM PDT on July 30, 2016","civil": "11:00 AM","month_name": "July","month_name_abbrev": "Jul","weekday_name": "Saturday","weekday_name_night": "Saturday Night","weekday_name_abbrev": "Sat","weekday_name_unlang": "Saturday","weekday_name_night_unlang": "Saturday Night","ampm": "AM","tz": "","age": "","UTCDATE": ""
+		},
+		"temp": {"english": "69", "metric": "21"},
+		"dewpoint": {"english": "54", "metric": "12"},
+		"condition": "Partly Cloudy",
+		"icon": "partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+		"fctcode": "2",
+		"sky": "41",
+		"wspd": {"english": "6", "metric": "10"},
+		"wdir": {"dir": "SW", "degrees": "235"},
+		"wx": "Partly Cloudy",
+		"uvi": "5",
+		"humidity": "60",
+		"windchill": {"english": "-9999", "metric": "-9999"},
+		"heatindex": {"english": "-9999", "metric": "-9999"},
+		"feelslike": {"english": "69", "metric": "21"},
+		"qpf": {"english": "0.0", "metric": "0"},
+		"snow": {"english": "0.0", "metric": "0"},
+		"pop": "0",
+		"mslp": {"english": "29.92", "metric": "1013"}
+		}
+	]
+}
+
