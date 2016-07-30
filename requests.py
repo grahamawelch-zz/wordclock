@@ -1,7 +1,8 @@
 import json
 import urllib2
 
-DEBUG = True
+DEBUG = False
+LOG = False
 
 WEATHER = ('http://api.wunderground.com/api/'
            '%(key)s/%(features)s/q/%(query)s.%(format)s')
@@ -23,10 +24,15 @@ TEMP = 'temp'
 ICON = 'icon'
 UNIT = 'english'
 
-
+# Save the current timezone, update once per day
 TIMEZONE = None if not DEBUG else 'PDT'
 CHECKED_TIMEZONE = ''
 TODAY = ''
+
+# Save the current weather, update on the 30mins
+WEATHER_TUPLE = None
+CHECKED_WEATHER = ''
+NOW = ''
 
 
 def BuildWeatherRequestUrl():
@@ -42,7 +48,7 @@ def BuildTimezoneRequestUrl():
   return WEATHER % {
     'key': KEY,
     'features': 'conditions',
-    'query': QUERY,
+    'query': WEATHER_QUERY,
     'format': FORMAT,
   }
 
@@ -61,8 +67,12 @@ def MakeRequest(url, sample, is_json=True):
     with open(sample, 'r') as sample_file:
       resp = sample_file.read()
   if is_json:
+    if LOG:
+      print url
     return json.loads(resp)
   else:
+    if LOG:
+      print ' '.join([url, resp])
     return resp
 
 
@@ -91,6 +101,7 @@ def SetTimezone():
 def MakeTimeRequest():
   if not TIMEZONE or CHECKED_TIMEZONE != TODAY:
     SetTimezone()
+
   return MakeRequest(
     BuildTimeRequestUrl(TIMEZONE),
     'samples/sample_time.txt',
@@ -142,11 +153,24 @@ def GetTime():
   return ParseTimeResp(MakeTimeRequest())
 
 
+def TimeToUpdateWeather(time_resp):
+  ''' Decide if we should update our forcast.'''
+  return (not WEATHER_TUPLE
+          or (time_resp[0] != CHECKED_WEATHER and time_resp[1] > 30))
 
-print GetWeather()
-print GetTime()
 
+def Get():
+  time_resp = GetTime()
 
+  # If the hour is not the hour we checked, and its after 30mins
+  if TimeToUpdateWeather(time_resp):
+    # Recheck the weather
+    global WEATHER_TUPLE
+    WEATHER_TUPLE = GetWeather()
 
+    # Update when we last checked
+    global CHECKED_WEATHER
+    CHECKED_WEATHER = time_resp[0]
 
+  return (WEATHER_TUPLE, time_resp)
 
