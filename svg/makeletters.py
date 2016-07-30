@@ -10,8 +10,15 @@ WEATHER = 'Weather Icons'
 FONT = 'TC_Lasersans'
 SIZE = '10'
 
-MIDDLE = '0%'
-TOP = '20%'
+
+def Move(x_i, y_i):
+    def Custom(x, y):
+        return (x + x_i, y + y_i)
+    return Custom
+
+def MoveZero():
+    return Move(0, 0)
+
 
 SHOW_REC = False
 
@@ -35,12 +42,12 @@ rows = [
 
 # LETTER, SIZE, FONT
 special_tuple = [
-    ('', '7', WEATHER, MIDDLE), # SUN f00d
-    ('', '7', WEATHER, MIDDLE), # CLOUD f041
-    ('', '7', WEATHER, TOP), # RAIN f019 ALT: f01c (sprinkles), f04e (drops)
-    ('', '7', WEATHER, TOP), # STORM f01e ALT: f01d (storm shower)
-    ('', '7', WEATHER, TOP), # SNOW f01b
-    ('', '7', WEATHER, MIDDLE), # WIND f050 ALT: f011 (cloudy gusts)
+    ('', '7', WEATHER, Move(0, -1)), # SUN f00d
+    ('', '7', WEATHER, Move(0, -1)), # CLOUD f041
+    ('', '7', WEATHER, Move(0, -2)), # RAIN f019 ALT: f01c (sprinkles), f04e (drops)
+    ('', '7', WEATHER, Move(0, -2)), # STORM f01e ALT: f01d (storm shower)
+    ('', '7', WEATHER, Move(0, -2)), # SNOW f01b
+    ('', '7', WEATHER, Move(1, -1)), # WIND f050 ALT: f011 (cloudy gusts)
 ]
 
 
@@ -57,10 +64,12 @@ class SVG(object):
 svg = SVG()
 
 
-def NormalLetter(letter_x, letter_y, letter, font=FONT, size=SIZE, shift='0%'):
+def NormalLetter(letter_x, letter_y, letter, font=FONT, size=SIZE, Shift=MoveZero()):
+    new_x, new_y = Shift(letter_x, letter_y)
+
     label = svg.text(
-        x=letter_x,
-        y=letter_y,
+        x=str(new_x),
+        y=str(new_y),
         fill=LET_FILL,
         attrib={
             'font-family': font,
@@ -68,7 +77,6 @@ def NormalLetter(letter_x, letter_y, letter, font=FONT, size=SIZE, shift='0%'):
             'font-weight': 'normal',
             'text-anchor': 'middle',
             'alignment-baseline': 'middle',
-            'baseline-shift': shift
         }
     )
     label.text = letter
@@ -84,7 +92,7 @@ def SpecialLetter(letter_x, letter_y, index):
         tuple[0].decode('utf-8'),
         font=tuple[2],
         size=tuple[1],
-        shift=tuple[3])
+        Shift=tuple[3])
 
 
 def BuildGrid():
@@ -119,8 +127,8 @@ def BuildGrid():
 
             sub = svg.g()
 
-            letter_x = str(px + .5 * x_inc)
-            letter_y = str(py + .5 * y_inc)
+            letter_x = px + .5 * x_inc
+            letter_y = py + .5 * y_inc
 
             rect = rect = svg.rect(
                 x=str(px),
