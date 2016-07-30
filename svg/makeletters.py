@@ -47,7 +47,7 @@ special_tuple = [
     ('', '7', WEATHER, Move(0, -2)), # RAIN f019 ALT: f01c (sprinkles), f04e (drops)
     ('', '7', WEATHER, Move(0, -2)), # STORM f01e ALT: f01d (storm shower)
     ('', '7', WEATHER, Move(0, -2)), # SNOW f01b
-    ('', '7', WEATHER, Move(1, -1)), # WIND f050 ALT: f011 (cloudy gusts)
+    ('', '7', WEATHER, Move(.65, -1)), # WIND f050 ALT: f011 (cloudy gusts)
 ]
 
 
@@ -112,7 +112,7 @@ def BuildGrid():
     letters_elem = svg.g()
 
     x_off = 10
-    y_off = 10
+    y_off = 13.25
 
     x_inc = 10
     y_inc = 10
