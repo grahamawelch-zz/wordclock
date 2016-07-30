@@ -22,8 +22,8 @@ FORECAST = {
   'hazy': [CLOUD],
   'mostlycloudy': [CLOUD],
   'mostlysunny': [SUN],
-  'partlycloudy': [CLOUD],
-  'partlysunny': [SUN],
+  'partlycloudy': [SUN, CLOUD],
+  'partlysunny': [SUN, CLOUD],
   'rain': [RAIN],
   'sleet': [RAIN, SNOW],
   'snow': [SNOW],
@@ -33,7 +33,7 @@ FORECAST = {
 }
 
 # In MPH
-WIND_CUTOFF = 10
+WIND_CUTOFF = 15
 
 
 def WeatherToEnums(icon, wind):

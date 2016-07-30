@@ -116,7 +116,7 @@ def ParseWeatherResp(weather_resp, specific_h):
   wind = hour[WIND][UNIT]
   temp = hour[TEMP][UNIT]
 
-  return (icon, wind, temp)
+  return (icon, int(wind), int(temp))
 
 
 def ParseTimeResp(time_resp):
