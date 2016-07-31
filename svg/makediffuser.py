@@ -30,12 +30,11 @@ svg = SVG()
 def MakeRectangle(x, y, width, height):
 
   rect = svg.rect(
-    x=str(x) + 'cm',
-    y=str(y) + 'cm',
-    width=str(width) + 'cm',
-    height=str(height) + 'cm',
-    stroke='black',
-    fill='green',
+    x=str(x),
+    y=str(y),
+    width=str(width),
+    height=str(height),
+    style='stroke:black;fill:none;stroke-width:.01;'
   )
 
   return rect
@@ -46,11 +45,12 @@ def BuildDiffuser():
   root = svg.svg(
       width='30cm',
       height='30cm',
+      viewBox = '0 0 30 30',
       version='1.1',
   )
 
-  x_off = 0
-  y_off = 0
+  x_off = 0.5
+  y_off = 0.5
 
   y_inc = 2.25
 
