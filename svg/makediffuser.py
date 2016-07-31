@@ -62,7 +62,7 @@ def BuildDiffuser():
 
     while(amt > 0):
 
-      if (x + x_off + size) > 30:
+      if (x + x_off + size) > 27:
         # Go to the next line if we get too long
         x = 0
         y += 1
