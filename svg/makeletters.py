@@ -99,8 +99,8 @@ def BuildGrid():
     register_namespace('svg', 'http://www.w3.org/2000/svg')
 
     root = svg.svg(
-        width='12in',
-        height='12in',
+        width='30cm',
+        height='30cm',
         viewBox='0 0 120 120',
         version='1.1',
     );
@@ -111,7 +111,7 @@ def BuildGrid():
 
     letters_elem = svg.g()
 
-    x_off = 10
+    x_off = 9.6
     y_off = 13.25
 
     x_inc = 10
