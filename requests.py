@@ -14,8 +14,9 @@ FORMAT = 'json'
 with open('wunderground_key', 'r') as key_file:
     KEY = key_file.read()
 
+# Hour Minute Second Month Day
 TIME = 'http://www.timeapi.org/%(timezone)s/now?%(query)s'
-TIME_QUERY = '\H:\M:\S:\D'
+TIME_QUERY = '\H:\M:\S:\m:\d'
 
 HOURLY_FORECAST = 'hourly_forecast'
 
@@ -124,11 +125,12 @@ def ParseTimeResp(time_resp):
   hour = int(split[0])
   minute = int(split[1])
   second = int(split[2])
-  date = split[3]
+  month = int(split[3])
+  day = int(split[4])
 
   # Set TODAY so we know to update TIMEZONE tomorrow
   global TODAY
-  TODAY = date
+  TODAY = day
 
   # Check for AM or PM
   if hour >= 12:
@@ -142,7 +144,7 @@ def ParseTimeResp(time_resp):
   if hour == 0:
     hour = 12
 
-  return (hour, minute, second, meridiem)
+  return (hour, minute, second, meridiem, month, day)
 
 
 def GetWeather(specific_h=0):
