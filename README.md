@@ -18,3 +18,32 @@ network={
 Once this is set up, the Pi should automatically connect to the highest priority network it can find.
 
 From there, `ssh pi@raspberrypi.local` with the password `raspberry`.
+
+```
+sudo apt-get install swig
+sudo apt-get install scons
+sudo apt-get install python-dev
+```
+
+Now follow instructions at http://popoklopsi.github.io/RaspberryPi-LedStrip/#!/ws2812
+
+
+Jessie outputs audio over the pin we use to control the LED.
+Try adding the following to your `/boot/config.txt`
+
+```
+hdmi_force_hotplug=1
+hdmi_force_edid_audio=1
+```
+
+This might not be enough. Black list the Broadcom drivers as well.
+
+```
+cd /etc/modprobe.d
+sudo vi alsa-blacklist.conf
+```
+
+Add the line `blacklist snd_bcm2835`, then reboot.
+
+There are other gotchas to the circutry as well. See the section on "flickering randomly".
+https://github.com/jgarff/rpi_ws281x/wiki
