@@ -1,11 +1,57 @@
 
+
+class Word:
+  counter = 0
+
+  def __init__(self, name, leds):
+    self.name = name
+    self.leds = leds
+    self.id = Word.counter
+    Word.counter += 1
+
+  def __str__(self):
+    return self.name
+
+  def __lt__(self, other):
+    return self.id - other.id
+
+  def getLeds(self):
+    return self.leds
+
+  def isWeather(self):
+    return False
+
+
+class Weather(Word):
+  def isWeather(self):
+    return True
+
+
+WHITE = (255, 255, 255)
+RED = (255, 0, 0)
+GREEN = (0, 255, 0)
+BLUE = (0, 0, 255)
+
+HOT = RED
+COLD = BLUE
+
+OFF = (0, 0, 0)
+DEFAULT_COLOR = WHITE
+
+HOLIDAYS = {
+  (12, 25): [RED, GREEN], # Christmas
+  (2, 14): [RED], # Valentine's Day
+  (3, 17): [GREEN], # St. Patrick's Day
+}
+
+
 # Weather
-SUN = (0, 'SUN')
-CLOUD = (1, 'CLOUD')
-RAIN = (2, 'RAIN')
-STORM = (3, 'STORM')
-SNOW = (4, 'SNOW')
-WIND = (5, 'WIND')
+SUN = Weather('SUN', [])
+CLOUD = Weather('CLOUD', [])
+RAIN = Weather('RAIN', [])
+STORM = Weather('STORM', [])
+SNOW = Weather('SNOW', [])
+WIND = Weather('WIND', [])
 
 # List of possible Forecast Icons
 # https://www.wunderground.com/weather/api/d/docs?d=resources/phrase-glossary#forecast_description_phrases
@@ -35,6 +81,10 @@ FORECAST = {
 # In MPH
 WIND_CUTOFF = 15
 
+# In F
+HOT_CUTOFF = 90
+COLD_CUTOFF = 40
+
 
 def WeatherToEnums(icon, wind):
   if icon in FORECAST:
@@ -51,38 +101,36 @@ def WeatherToEnums(icon, wind):
 
 
 # Minutes
-M_HALF = (6, 'HALF')
-M_TWENTY = (7, 'TWENTY')
-M_FIVE = (8, 'FIVE')
-M_QUARTER = (9, 'QUARTER')
-M_TEN = (10, 'TEN')
+M_HALF = Word('HALF', [])
+M_TWENTY = Word('TWENTY', [])
+M_FIVE = Word('FIVE', [])
+M_QUARTER = Word('QUARTER', [])
+M_TEN = Word('TEN', [])
 
 # Transitions
-IT = (11, 'IT')
-PAST = (12, 'PAST')
-IS = (13, 'IS')
-TO = (14, 'TO')
+IT = Word('IT', [])
+PAST = Word('PAST', [])
+IS = Word('IS', [])
+TO = Word('TO', [])
 
 # Hours
-H_ONE = (15, 'ONE')
-H_SIX = (16, 'SIX')
-H_NINE = (17, 'NINE')
-H_THREE = (18, 'THREE')
-H_SEVEN = (19, 'SEVEN')
-H_ELEVEN = (20, 'ELEVEN')
-H_FIVE = (21, 'FIVE')
-H_TEN = (22, 'TEN')
-H_FOUR = (23, 'FOUR')
-H_TWO = (24, 'TWO')
-H_EIGHT = (25, 'EIGH')
-# Eight and Twelve share their 'T'
-H_T = (26, 'T')
-H_TWELVE = (27, 'WELVE')
+H_ONE = Word('ONE', [])
+H_SIX = Word('SIX', [])
+H_NINE = Word('NINE', [])
+H_THREE = Word('THREE', [])
+H_SEVEN = Word('SEVEN', [])
+H_ELEVEN = Word('ELEVEN', [])
+H_FIVE = Word('FIVE', [])
+H_TEN = Word('TEN', [])
+H_FOUR = Word('FOUR', [])
+H_TWO = Word('TWO', [])
+H_EIGHT = Word('EIGHT', [])
+H_TWELVE = Word('TWELVE', [])
 
 # Other stuff
-OCLOCK = (28, 'OCLOCK')
-AM = (29, 'AM')
-PM = (30, 'PM')
+OCLOCK = Word('OCLOCK', [])
+AM = Word('AM', [])
+PM = Word('PM', [])
 
 
 def TimeToEnums(hour, minutes, seconds, meridiem):
@@ -155,9 +203,7 @@ def TimeToEnums(hour, minutes, seconds, meridiem):
   elif hour == 7:
     out.append(H_SEVEN)
   elif hour == 8:
-    # Eight shares the T with twelve
     out.append(H_EIGHT)
-    out.append(H_T)
   elif hour == 9:
     out.append(H_NINE)
   elif hour == 10:
@@ -165,8 +211,6 @@ def TimeToEnums(hour, minutes, seconds, meridiem):
   elif hour == 11:
     out.append(H_ELEVEN)
   else:
-    # Tweleve shares the T with eight
-    out.append(H_T)
     out.append(H_TWELVE)
 
   if add_oclock:

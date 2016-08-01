@@ -1,4 +1,5 @@
 import requests
+import sys
 import time
 import words
 
@@ -6,6 +7,7 @@ import words
 
 SLEEP = 60
 
+PREV = []
 
 def ConvertWeatherToEnums(weather_resp):
   # Pass ICON and WIND
@@ -22,27 +24,19 @@ def ConvertTimeToEnums(time_resp):
   )
 
 
-def BuildLightString(enums):
-  '''Convert enums to space separated text.'''
-  out = []
-  for item in enums:
-    out.append(item[1])
-
-  return ' '.join(out)
-
-
 # Initially just print list of enums when they change.
-prev = None
+
 while(True):
   weather_resp, time_resp = requests.Get()
   out = []
   out += ConvertWeatherToEnums(weather_resp)
   out += ConvertTimeToEnums(time_resp)
 
-  string = BuildLightString(out)
+  string = ' '.join(str(word) for word in out)
 
-  if string != prev:
+  if out != PREV:
     print string
-    prev = string
+    print >> sys.stderr, string
+    PREV = out
 
   time.sleep(SLEEP)
