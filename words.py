@@ -31,6 +31,9 @@ WHITE = (255, 255, 255)
 RED = (255, 0, 0)
 GREEN = (0, 255, 0)
 BLUE = (0, 0, 255)
+YELLOW = (255, 255, 0)
+CYAN = (0, 255, 255)
+MAGENTA = (255, 0, 255)
 
 HOT = RED
 COLD = BLUE
@@ -39,10 +42,20 @@ OFF = (0, 0, 0)
 DEFAULT_COLOR = WHITE
 
 HOLIDAYS = {
-  (12, 25): [RED, GREEN], # Christmas
   (2, 14): [RED], # Valentine's Day
   (3, 17): [GREEN], # St. Patrick's Day
+  (7, 4): [RED, WHITE, BLUE], # Independence Day
+  (12, 25): [RED, GREEN], # Christmas
 }
+
+BIRTHDAY_COLORS = [YELLOW, CYAN, MAGENTA]
+
+# Create a file called 'birthdays' that contains birthdays on each line
+# in the format "<month> <day>\n" as numbers.
+with open('birthdays', 'r') as birthday_file:
+  birthday_list = birthday_file.read().splitlines()
+  for birthday in birthday_list:
+    HOLIDAYS[(int(birthday.split()[0]), int(birthday.split()[1]))] = BIRTHDAY_COLORS
 
 
 # Weather
