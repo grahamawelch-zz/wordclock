@@ -4,7 +4,7 @@ import random
 import words
 
 
-LED_COUNT      = 10
+LED_COUNT      = 30
 LED_PIN        = 18
 LED_FREQ_HZ    = 800000
 LED_DMA        = 5
@@ -15,6 +15,15 @@ LED_INVERT     = False
 # Initalize the strip
 STRIP = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS)
 STRIP.begin()
+
+def ClearAll():
+  for i in range(LED_COUNT):
+    STRIP.setPixelColorRGB(i, 0, 0, 0)
+  STRIP.show()
+
+# Start fresh
+ClearAll()
+
 
 
 def Update(words, weather_color, colors):
@@ -28,17 +37,17 @@ def Update(words, weather_color, colors):
       # Rotate through the colors for each word
       cur_color = colors[i]
       i += 1
-      if i > len(colors):
+      if i >= len(colors):
         i = 0
     for led in word.getLeds():
-      strip.setPixelColor(led, cur_color)
+      STRIP.setPixelColorRGB(led, cur_color[0], cur_color[1], cur_color[2])
 
 
 def Off(enums):
-  update(enums, words.OFF, [words.OFF])
+  Update(enums, words.OFF, [words.OFF])
 
 
-def UpdateLights(new, date, temp):
+def UpdateLights(new, old, date, temp):
   # new: List of Words
   # date: (month, day)
   # temp: number
@@ -57,9 +66,12 @@ def UpdateLights(new, date, temp):
 
   # Call off first, then we might re turn on those same leds in a
   # different color
+  print 'Old- ' + ' '.join(str(word) for word in old)
+  print 'New- ' + ' '.join(str(word) for word in new)
+
   Off(old)
   Update(new, weather_color, colors)
-  strip.show()
+  STRIP.show()
 
 
 

@@ -40,7 +40,7 @@ while(True):
 
   temp = weather_resp[2]
 
-  lights.UpdateLights(out, (month, day), temp)
+  lights.UpdateLights(out, PREV, (month, day), temp)
   if out != PREV:
     print string
     #print >> sys.stderr, string

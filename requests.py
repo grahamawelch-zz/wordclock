@@ -12,7 +12,7 @@ FORMAT = 'json'
 # You need to have a file called 'wunderground_key'
 # that only contains your api key for wunderground.
 with open('wunderground_key', 'r') as key_file:
-    KEY = key_file.read()
+    KEY = key_file.read().strip()
 
 # Hour Minute Second Month Day
 TIME = 'http://www.timeapi.org/%(timezone)s/now?%(query)s'
@@ -62,6 +62,7 @@ def BuildTimeRequestUrl(timezone):
 
 
 def MakeRequest(url, sample, is_json=True):
+  print url
   if not DEBUG:
     resp = urllib2.urlopen(url).read()
   else:
