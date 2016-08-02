@@ -1,3 +1,4 @@
+import lights
 import requests
 import sys
 import time
@@ -15,7 +16,7 @@ def ConvertWeatherToEnums(weather_resp):
 
 
 def ConvertTimeToEnums(time_resp):
-  # Pass HOURS MINUTES SECONDS MERIDIEM
+  # Pass HOURS MINUTES SECONDS MERIDIEM MONTH DAY
   return words.TimeToEnums(
     time_resp[0],
     time_resp[1],
@@ -34,9 +35,15 @@ while(True):
 
   string = ' '.join(str(word) for word in out)
 
+  month = time_resp[4]
+  day = time_resp[5]
+
+  temp = weather_resp[2]
+
+  lights.UpdateLights(out, (month, day), temp)
   if out != PREV:
     print string
-    print >> sys.stderr, string
+    #print >> sys.stderr, string
     PREV = out
 
   time.sleep(SLEEP)
