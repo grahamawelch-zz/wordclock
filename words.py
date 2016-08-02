@@ -31,10 +31,6 @@ WHITE = (255, 255, 255)
 RED = (255, 0, 0)
 GREEN = (0, 255, 0)
 BLUE = (0, 0, 255)
-YELLOW = (255, 255, 0)
-CYAN = (0, 255, 255)
-MAGENTA = (255, 0, 255)
-
 
 HOT = RED
 COLD = BLUE
@@ -42,31 +38,20 @@ COLD = BLUE
 OFF = (0, 0, 0)
 DEFAULT_COLOR = WHITE
 
-# So far only holidays with fixed dates. 
 HOLIDAYS = {
+  (12, 25): [RED, GREEN], # Christmas
   (2, 14): [RED], # Valentine's Day
   (3, 17): [GREEN], # St. Patrick's Day
-  (7, 4): [RED, WHITE, BLUE], # Independence Day
-  (12, 25): [RED, GREEN], # Christmas
 }
-
-BIRTHDAY_COLORS = [YELLOW, CYAN, MAGENTA]
-
-# You need to have a file called 'birthdays'
-# that contains lines of "<MONTH> <DAY>\n"
-with open('birthdays', 'r') as birthday_file:
-  raw_birthdays = birthday_file.read()
-  for entry in raw_birthdays.splitlines():
-    HOLIDAYS[(entry.split()[0], entry.split()[1])] = BIRTHDAY_COLORS
 
 
 # Weather
-SUN = Weather('SUN', [])
-CLOUD = Weather('CLOUD', [])
-RAIN = Weather('RAIN', [])
-STORM = Weather('STORM', [])
-SNOW = Weather('SNOW', [])
-WIND = Weather('WIND', [])
+SUN = Weather('SUN', [0])
+CLOUD = Weather('CLOUD', [1])
+RAIN = Weather('RAIN', [2])
+STORM = Weather('STORM', [3])
+SNOW = Weather('SNOW', [4])
+WIND = Weather('WIND', [5])
 
 # List of possible Forecast Icons
 # https://www.wunderground.com/weather/api/d/docs?d=resources/phrase-glossary#forecast_description_phrases
@@ -116,36 +101,36 @@ def WeatherToEnums(icon, wind):
 
 
 # Minutes
-M_HALF = Word('HALF', [])
-M_TWENTY = Word('TWENTY', [])
-M_FIVE = Word('FIVE', [])
-M_QUARTER = Word('QUARTER', [])
-M_TEN = Word('TEN', [])
+M_HALF = Word('HALF', [6])
+M_TWENTY = Word('TWENTY', [7])
+M_FIVE = Word('FIVE', [8])
+M_QUARTER = Word('QUARTER', [9])
+M_TEN = Word('TEN', [10])
 
 # Transitions
-IT = Word('IT', [])
-PAST = Word('PAST', [])
-IS = Word('IS', [])
-TO = Word('TO', [])
+IT = Word('IT', [11])
+PAST = Word('PAST', [12])
+IS = Word('IS', [13])
+TO = Word('TO', [14])
 
 # Hours
-H_ONE = Word('ONE', [])
-H_SIX = Word('SIX', [])
-H_NINE = Word('NINE', [])
-H_THREE = Word('THREE', [])
-H_SEVEN = Word('SEVEN', [])
-H_ELEVEN = Word('ELEVEN', [])
-H_FIVE = Word('FIVE', [])
-H_TEN = Word('TEN', [])
-H_FOUR = Word('FOUR', [])
-H_TWO = Word('TWO', [])
-H_EIGHT = Word('EIGHT', [])
-H_TWELVE = Word('TWELVE', [])
+H_ONE = Word('ONE', [15])
+H_SIX = Word('SIX', [16])
+H_NINE = Word('NINE', [17])
+H_THREE = Word('THREE', [18])
+H_SEVEN = Word('SEVEN', [19])
+H_ELEVEN = Word('ELEVEN', [20])
+H_FIVE = Word('FIVE', [21])
+H_TEN = Word('TEN', [22])
+H_FOUR = Word('FOUR', [23])
+H_TWO = Word('TWO', [24])
+H_EIGHT = Word('EIGHT', [25, 26])
+H_TWELVE = Word('TWELVE', [26, 27])
 
 # Other stuff
-OCLOCK = Word('OCLOCK', [])
-AM = Word('AM', [])
-PM = Word('PM', [])
+OCLOCK = Word('OCLOCK', [28])
+AM = Word('AM', [29])
+PM = Word('PM', [30])
 
 
 def TimeToEnums(hour, minutes, seconds, meridiem):
