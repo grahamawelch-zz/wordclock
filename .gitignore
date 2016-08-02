@@ -23,6 +23,7 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+*~
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -93,4 +94,7 @@ ENV/
 
 # API Keys
 *_key
+
+# Birthdays!
+birthdays
 
