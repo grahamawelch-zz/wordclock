@@ -1,5 +1,6 @@
 from neopixel import Adafruit_NeoPixel
 from neopixel import Color
+import random
 import words
 
 
@@ -17,7 +18,9 @@ STRIP.begin()
 
 
 def Update(words, weather_color, colors):
-  i = 0
+  # Mix up the colors a little.
+  # randint(a, b) returns a <= N <= b
+  i = random.randint(0, len(colors) - 1)
   for word in words:
     if word.isWeather():
       cur_color = weather_color
