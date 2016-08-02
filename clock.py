@@ -28,7 +28,16 @@ def ConvertTimeToEnums(time_resp):
 # Initially just print list of enums when they change.
 
 while(True):
-  weather_resp, time_resp = requests.Get()
+  try:
+    weather_resp, time_resp = requests.Get()
+  except Exception as e:
+    print >> sys.stderr, e
+    # We still need to sleep in this case to avoid API request limits.
+    time.sleep(SLEEP)
+    continue
+  print weather_resp
+  print time_resp
+
   out = []
   out += ConvertWeatherToEnums(weather_resp)
   out += ConvertTimeToEnums(time_resp)

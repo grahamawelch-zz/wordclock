@@ -3,8 +3,8 @@ from neopixel import Color
 import random
 import words
 
-
-LED_COUNT      = 30
+# Not zero indexed...
+LED_COUNT      = 31
 LED_PIN        = 18
 LED_FREQ_HZ    = 800000
 LED_DMA        = 5
@@ -40,6 +40,7 @@ def Update(words, weather_color, colors):
       if i >= len(colors):
         i = 0
     for led in word.getLeds():
+      print 'Updating pixel %s with %s' % (led, cur_color)
       STRIP.setPixelColorRGB(led, cur_color[0], cur_color[1], cur_color[2])
 
 
@@ -67,7 +68,9 @@ def UpdateLights(new, old, date, temp):
   # Call off first, then we might re turn on those same leds in a
   # different color
   print 'Old- ' + ' '.join(str(word) for word in old)
+  print 'Old- ' + ' '.join(str(word.getLeds()) for word in old)
   print 'New- ' + ' '.join(str(word) for word in new)
+  print 'New- ' + ' '.join(str(word.getLeds()) for word in new)
 
   Off(old)
   Update(new, weather_color, colors)
