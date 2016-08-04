@@ -50,17 +50,18 @@ ALL_WORDS = [
 
 def Update(leds, cur_color):
   for led in leds:
-    STRIP.setPixelColorRGB(led, cur_color[0], cur_color[1], cur_color[2])
+    strip.setPixelColorRGB(led, cur_color[0], cur_color[1], cur_color[2])
 
 prev = None
 
-for word in ALL_WORDS:
-  if prev:
-    Update(prev.getLeds(), words.OFF)
+while(True):
+  for word in ALL_WORDS:
+    if prev:
+      Update(prev.getLeds(), words.OFF)
 
-  Update(word.getLeds(), words.WHITE)
-  prev = word
+    Update(word.getLeds(), words.WHITE)
+    prev = word
 
-  strip.show()
+    strip.show()
 
-  time.sleep(.5)
+    time.sleep(.5)
