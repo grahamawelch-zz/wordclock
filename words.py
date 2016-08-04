@@ -118,7 +118,7 @@ M_HALF = Word('HALF', [7, 8, 9])
 M_TWENTY = Word('TWENTY', [96, 98, 100])
 M_FIVE = Word('FIVE', [93, 95])
 M_QUARTER = Word('QUARTER', [14, 16, 18])
-M_TEN = Word('TEN', [11, 13])
+M_TEN = Word('TEN', [11, 12, 13])
 
 # Transitions
 IT = Word('IT', [83])
