@@ -3,8 +3,8 @@ from neopixel import Color
 import random
 import words
 
-# Not zero indexed...
-LED_COUNT      = 31
+
+LED_COUNT      = 101
 LED_PIN        = 18
 LED_FREQ_HZ    = 800000
 LED_DMA        = 5
