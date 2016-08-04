@@ -137,8 +137,8 @@ H_FIVE = Word('FIVE', [31, 33])
 H_TEN = Word('TEN', [61])
 H_FOUR = Word('FOUR', [63, 65])
 H_TWO = Word('TWO', [67])
-H_EIGHT = Word('EIGHT', [41, 43, 44 # T])
-H_TWELVE = Word('TWELVE', [45, 47, 44 # T])
+H_EIGHT = Word('EIGHT', [41, 43, 44])
+H_TWELVE = Word('TWELVE', [45, 47, 44])
 
 # Other stuff
 OCLOCK = Word('OCLOCK', [54, 56, 58])

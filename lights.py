@@ -4,7 +4,7 @@ import random
 import words
 
 
-LED_COUNT      = 101
+LED_COUNT      = 102
 LED_PIN        = 18
 LED_FREQ_HZ    = 800000
 LED_DMA        = 5
