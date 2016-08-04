@@ -21,6 +21,7 @@ ALL_WORDS = [
   words.CLOUD,
   words.RAIN,
   words.STORM,
+  words.SNOW,
   words.WIND,
   words.M_HALF,
   words.M_TWENTY,
@@ -48,9 +49,16 @@ ALL_WORDS = [
   words.PM,
 ]
 
+def clear():
+  for i in range(LED_COUNT):
+    strip.setPixelColorRGB(i, 0, 0, 0)
+  strip.show()
+
 def Update(leds, cur_color):
   for led in leds:
     strip.setPixelColorRGB(led, cur_color[0], cur_color[1], cur_color[2])
+
+clear()
 
 prev = None
 
