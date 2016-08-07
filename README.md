@@ -52,13 +52,14 @@ https://github.com/jgarff/rpi_ws281x/wiki
 
 ## Run the clock.
 
-For easy of debugging, start the script in screen so we can re-attach to it.
+For easy of debugging, we will start the script in screen so we can re-attach to it.
+Add the following lines to ~/etc/rc.local
 
 ```
-screen -R clock
-sudo python clock.py 2> errors.txt
+git -C ~/workspace/wordclock pull
+screen -d -m -S clock ~/workspace/wordclock/start_clock.sh
 ```
 
-Then press `CTRL-A CTRL-D` to detach. Then you can always ssh back and run `screen -r clock` to see what the script is up to.
+You can always ssh back and run `screen -r clock` to see what the script is up to.
 
 The script also redirects exceptions to `errors.txt` so you can investigate later.
