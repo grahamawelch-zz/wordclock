@@ -2,7 +2,7 @@ from neopixel import *
 import time
 
 
-LED_COUNT      = 40
+LED_COUNT      = 100
 LED_PIN        = 18
 LED_FREQ_HZ    = 800000
 LED_DMA        = 5

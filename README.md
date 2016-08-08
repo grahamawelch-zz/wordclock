@@ -25,6 +25,7 @@ sudo apt-get install scons
 sudo apt-get install python-dev
 sudo apt-get install vim
 sudo apt-get install screen
+sudo apt-get install gnome-schedule
 ```
 
 Now follow instructions at http://popoklopsi.github.io/RaspberryPi-LedStrip/#!/ws2812
@@ -53,13 +54,12 @@ https://github.com/jgarff/rpi_ws281x/wiki
 ## Run the clock.
 
 For easy of debugging, we will start the script in screen so we can re-attach to it.
-Add the following lines to ~/etc/rc.local
+Add the following lines to `sudo crontab -e`
 
 ```
-git -C ~/workspace/wordclock pull
-screen -d -m -S clock ~/workspace/wordclock/start_clock.sh
+@reboot bash /home/pi/workspace/wordclock/reboot.sh
 ```
 
-You can always ssh back and run `screen -r clock` to see what the script is up to.
+You can always ssh back and run `screen -d -r clock` to see what the script is up to.
 
 The script also redirects exceptions to `errors.txt` so you can investigate later.
