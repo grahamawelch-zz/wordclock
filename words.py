@@ -120,10 +120,10 @@ M_HALF = Word('HALF', [0, 1, 2])
 M_TWENTY = Word('TWENTY', [12, 13, 14, 15])
 M_FIVE = Word('FIVE', [16, 17, 18])
 M_QUARTER = Word('QUARTER', [28, 27, 26, 25, 24])
-M_TEN = Word('TEN', [23, 23])
+M_TEN = Word('TEN', [23, 22])
 
 # Transitions
-IT = Word('IT', [32, 32])
+IT = Word('IT', [32, 33])
 PAST = Word('PAST', [34, 35, 36])
 IS = Word('IS', [37])
 TO = Word('TO', [38])
