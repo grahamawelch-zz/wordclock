@@ -136,7 +136,7 @@ H_ELEVEN = Word('ELEVEN', [69, 68, 67, 66, 65])
 H_FIVE = Word('FIVE', [64, 63, 62])
 H_TEN = Word('TEN', [72, 73])
 H_FOUR = Word('FOUR', [74, 75, 76])
-H_TWO = Word('TWO', [77, 78])
+H_TWO = Word('TWO', [77, 78, 79])
 H_EIGHT = Word('EIGHT', [89, 88, 87, 86])
 H_TWELVE = Word('TWELVE', [86, 85, 84, 83, 82])
 
