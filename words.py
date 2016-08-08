@@ -33,7 +33,8 @@ GREEN = (0, 255, 0)
 BLUE = (0, 0, 255)
 YELLOW = (255, 255, 0)
 CYAN = (0, 255, 255)
-MAGENTA = (255, 0, 255)
+MAGENTA = (255, 0, 255) # Looks like purple
+ORANGE = (255, 127, 0)
 
 HOT = RED
 COLD = BLUE
@@ -45,6 +46,7 @@ HOLIDAYS = {
   (2, 14): [RED], # Valentine's Day
   (3, 17): [GREEN], # St. Patrick's Day
   (7, 4): [RED, WHITE, BLUE], # Independence Day
+  (10, 31): [ORANGE, MAGENTA], # Halloween
   (12, 25): [RED, GREEN], # Christmas
 }
 
