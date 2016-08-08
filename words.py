@@ -126,7 +126,7 @@ M_TEN = Word('TEN', [23, 22])
 IT = Word('IT', [32, 33])
 PAST = Word('PAST', [34, 35, 36])
 IS = Word('IS', [37])
-TO = Word('TO', [38])
+TO = Word('TO', [38, 39])
 
 # Hours
 H_ONE = Word('ONE', [49, 48])
