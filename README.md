@@ -60,6 +60,6 @@ Add the following lines to `sudo crontab -e`
 @reboot bash /home/pi/workspace/wordclock/reboot.sh
 ```
 
-You can always ssh back and run `screen -d -r clock` to see what the script is up to.
+You can always ssh back and run `sudo screen -r clock` to see what the script is up to.
 
 The script also redirects exceptions to `errors.txt` so you can investigate later.
