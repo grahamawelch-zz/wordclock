@@ -61,6 +61,9 @@ def Update(leds, cur_color):
 
 clear()
 
+# Pause so you can ctrl-c to easily clear the screen.
+time.sleep(1)
+
 prev = None
 
 while(True):
