@@ -1,6 +1,7 @@
 from neopixel import *
 import time
 import words
+import light_map
 
 
 LED_COUNT      = 102
@@ -17,36 +18,36 @@ strip.begin()
 
 
 ALL_WORDS = [
-  words.SUN,
-  words.CLOUD,
-  words.RAIN,
-  words.STORM,
-  words.SNOW,
-  words.WIND,
-  words.M_HALF,
-  words.M_TWENTY,
-  words.M_FIVE,
-  words.M_QUARTER,
-  words.M_TEN,
-  words.IT,
-  words.PAST,
-  words.IS,
-  words.TO,
-  words.H_ONE,
-  words.H_SIX,
-  words.H_NINE,
-  words.H_THREE,
-  words.H_SEVEN,
-  words.H_ELEVEN,
-  words.H_FIVE,
-  words.H_TEN,
-  words.H_FOUR,
-  words.H_TWO,
-  words.H_EIGHT,
-  words.H_TWELVE,
-  words.OCLOCK,
-  words.AM,
-  words.PM,
+  light_map.SUN,
+  light_map.CLOUD,
+  light_map.RAIN,
+  light_map.STORM,
+  light_map.SNOW,
+  light_map.WIND,
+  light_map.M_HALF,
+  light_map.M_TWENTY,
+  light_map.M_FIVE,
+  light_map.M_QUARTER,
+  light_map.M_TEN,
+  light_map.IT,
+  light_map.PAST,
+  light_map.IS,
+  light_map.TO,
+  light_map.H_ONE,
+  light_map.H_SIX,
+  light_map.H_NINE,
+  light_map.H_THREE,
+  light_map.H_SEVEN,
+  light_map.H_ELEVEN,
+  light_map.H_FIVE,
+  light_map.H_TEN,
+  light_map.H_FOUR,
+  light_map.H_TWO,
+  light_map.H_EIGHT,
+  light_map.H_TWELVE,
+  light_map.OCLOCK,
+  light_map.AM,
+  light_map.PM,
 ]
 
 def clear():
