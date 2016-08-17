@@ -63,3 +63,17 @@ Add the following lines to `sudo crontab -e`
 You can always ssh back and run `sudo screen -r clock` to see what the script is up to.
 
 The script also redirects exceptions to `errors.txt` so you can investigate later.
+
+## Customize your Clock
+
+Add some birthdays to a file called 'birthdays' in the format 'MONTH DAY', e.g. '2 3' for Feb 3rd.
+Put each entry on its own line.
+
+The threshold for what is considered hot or cold temperatures is set in [words.py](words.py).
+The threshold for windy weather is set in the same file.
+See WIND_CUTOFF, HOT_CUTOFF, and COLD_CUTOFF; units are MPH and F. (Defaults are 15, 90, 40)
+
+You can also configure the colors used for holidays, or normal operation, in [words.py](words.py).
+
+Based on how you layout your LEDs, you will need to update [light_map.py](light_map.py); [light_map_alt.py](light_map_alt.py) is an example alternative mapping of LEDs to words.
+
