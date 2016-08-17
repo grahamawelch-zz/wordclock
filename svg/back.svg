@@ -1,0 +1,28 @@
+<svg:svg xmlns:svg="http://www.w3.org/2000/svg" height="30cm" version="1.1" viewBox="0 0 300 300" width="30cm">
+
+<svg:text x="20" y="40" font-family="Monospace" font-size="12">
+a word clock for
+</svg:text>
+
+<svg:text x="20" y="60" font-family="Monospace" font-size="15">
+ABCDE FGHIJKL
+</svg:text>
+
+
+
+
+
+<svg:text x="20" y="240" font-family="Monospace" font-size="10">
+github.com/grahamawelch/wordclock
+</svg:text>
+
+<svg:text x="20" y="260" font-family="Monospace" font-size="10">
+pi@wordclock.local
+</svg:text>
+
+<!-- Remember to remove this section before etching. This rectangle is cut for the power cord. -->
+<svg:rect x="142" y="255" width="16" height="30"/>
+
+
+
+</svg:svg>
