@@ -139,12 +139,6 @@ def ParseTimeResp(time_resp):
   else:
     meridiem = 'AM'
 
-  # Handle Noon and Midnight
-  if hour > 12:
-    hour = hour - 12
-  if hour == 0:
-    hour = 12
-
   return (hour, minute, second, meridiem, month, day)
 
 

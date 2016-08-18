@@ -82,8 +82,7 @@ def WeatherToEnums(icon, wind):
   return out
 
 
-def TimeToEnums(hour, minutes, seconds, meridiem):
-  flip_meridiem = False
+def TimeToEnums(hour, minutes, seconds):
   add_oclock = False
   increment_hr = False
 
@@ -92,34 +91,34 @@ def TimeToEnums(hour, minutes, seconds, meridiem):
     minutes = minutes + 1
 
   # Add enums for minutes
-  if minutes <= 2:
+  if minutes <= 3:
     out = [IT, IS]
     add_oclock = True
-  elif minutes <= 7:
+  elif minutes <= 8:
     out = [M_FIVE, PAST]
-  elif minutes <= 12:
+  elif minutes <= 13:
     out = [M_TEN, PAST]
-  elif minutes <= 17:
+  elif minutes <= 18:
     out = [M_QUARTER, PAST]
-  elif minutes <= 22:
+  elif minutes <= 23:
     out = [M_TWENTY, PAST]
-  elif minutes <= 27:
+  elif minutes <= 28:
     out = [M_TWENTY, M_FIVE, PAST]
-  elif minutes < 32:
+  elif minutes < 33:
     out = [M_HALF, PAST]
-  elif minutes < 37:
+  elif minutes < 38:
     out = [M_TWENTY, M_FIVE, TO]
     increment_hr = True
-  elif minutes < 42:
+  elif minutes < 43:
     out = [M_TWENTY, TO]
     increment_hr = True
-  elif minutes < 47:
+  elif minutes < 48:
     out = [M_QUARTER, TO]
     increment_hr = True
-  elif minutes < 52:
+  elif minutes < 53:
     out = [M_TEN, TO]
     increment_hr = True
-  elif minutes < 57:
+  elif minutes < 58:
     out = [M_FIVE, TO]
     increment_hr = True
   else:
@@ -131,10 +130,18 @@ def TimeToEnums(hour, minutes, seconds, meridiem):
   if increment_hr:
     hour = hour + 1
 
-    # Still no 13
-    if hour > 12:
-      flip_meridiem = True
-      hour = hour - 12
+  # Handle Meridiem
+  if hour >= 12 and hour <= 24:
+    out.append(PM)
+  else:
+    # Make sure this handles the case were its 23:32:30+ and we round up to 24
+    out.append(AM)
+
+  # Adjust back to 12 hours
+  if hour >= 12:
+    hour = hour - 12
+  elif hour = 0:
+    hour = 12
 
   # Add enums for hours
   if hour == 1:
@@ -164,15 +171,5 @@ def TimeToEnums(hour, minutes, seconds, meridiem):
 
   if add_oclock:
     out.append(OCLOCK)
-
-  # Handle Meridiem
-  if meridiem == 'AM' and not flip_meridiem:
-    out.append(AM)
-  elif meridiem == 'PM' and not flip_meridiem:
-    out.append(PM)
-  elif meridiem == 'AM': # and flip_meridiem
-    out.append(PM)
-  else: # meridiem == 'PM' and flip_meridiem
-    out.append(AM)
 
   return out

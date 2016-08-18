@@ -21,7 +21,6 @@ def ConvertTimeToEnums(time_resp):
     time_resp[0],
     time_resp[1],
     time_resp[2],
-    time_resp[3],
   )
 
 
