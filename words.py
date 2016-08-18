@@ -134,7 +134,7 @@ def TimeToEnums(hour, minutes, seconds):
   if hour >= 12 and hour <= 24:
     out.append(PM)
   else:
-    # Make sure this handles the case were its 23:32:30+ and we round up to 24
+    # Make sure this handles the case where it's 23:32:30+ and we round up to 24
     out.append(AM)
 
   # Adjust back to 12 hours
