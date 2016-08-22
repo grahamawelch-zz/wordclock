@@ -140,7 +140,7 @@ def TimeToEnums(hour, minutes, seconds):
   # Adjust back to 12 hours
   if hour >= 12:
     hour = hour - 12
-  elif hour = 0:
+  elif hour == 0:
     hour = 12
 
   # Add enums for hours
