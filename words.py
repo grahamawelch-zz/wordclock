@@ -131,7 +131,7 @@ def TimeToEnums(hour, minutes, seconds):
     hour = hour + 1
 
   # Handle Meridiem
-  if hour >= 12 and hour <= 24:
+  if hour >= 12 and hour <= 23:
     out.append(PM)
   else:
     # Make sure this handles the case where it's 23:32:30+ and we round up to 24
