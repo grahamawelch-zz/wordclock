@@ -1,5 +1,7 @@
 import json
 import urllib2
+import subprocess
+
 
 DEBUG = False
 LOG = False
@@ -92,6 +94,13 @@ def MakeTimezoneRequest():
   )
 
 
+def GitPull():
+  try:
+    subprocess.check_output(["git", "pull"])
+  except Exception as e:
+    print >> sys.stderr, e
+
+
 def SetTimezone():
   global TIMEZONE
   TIMEZONE = MakeTimezoneRequest()['current_observation']['local_tz_short']
@@ -103,6 +112,8 @@ def SetTimezone():
 def MakeTimeRequest():
   if not TIMEZONE or CHECKED_TIMEZONE != TODAY:
     SetTimezone()
+    # Update once a day.
+    GitPull()
 
   return MakeRequest(
     BuildTimeRequestUrl(TIMEZONE),
