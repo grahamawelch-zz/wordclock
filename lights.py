@@ -63,7 +63,7 @@ def UpdateLights(new, old, date, temp):
   if date in words.HOLIDAYS:
     colors = words.HOLIDAYS[date]
   else:
-    colors = [words.DEFAULT_COLOR]
+    colors = words.DEFAULT_COLORS
 
   # Call off first, then we might re turn on those same leds in a
   # different color

@@ -16,6 +16,7 @@ COLD = BLUE
 
 OFF = (0, 0, 0)
 DEFAULT_COLOR = WHITE
+DEFAULT_COLORS = [WHITE]
 
 HOLIDAYS = {
   (2, 14): [RED], # Valentine's Day
