@@ -16,7 +16,7 @@ COLD = BLUE
 
 OFF = (0, 0, 0)
 DEFAULT_COLOR = WHITE
-DEFAULT_COLORS = [WHITE]
+DEFAULT_COLORS = [YELLOW, CYAN, MAGENTA, GREEN, RED, BLUE, ORANGE]
 
 HOLIDAYS = {
   (2, 14): [RED], # Valentine's Day
@@ -26,7 +26,7 @@ HOLIDAYS = {
   (12, 25): [RED, GREEN], # Christmas
 }
 
-BIRTHDAY_COLORS = [YELLOW, CYAN, MAGENTA]
+BIRTHDAY_COLORS = [WHITE]
 
 # Create a file called 'birthdays' that contains birthdays on each line
 # in the format "<month> <day>\n" as numbers.
