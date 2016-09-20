@@ -53,6 +53,10 @@ def UpdateLights(new, old, date, temp):
   # date: (month, day)
   # temp: number
 
+  if new == old:
+    # Don't update the colors or lights if nothing has changed.
+    return
+
   if temp > words.HOT_CUTOFF:
     weather_color = words.HOT
   elif temp < words.COLD_CUTOFF:
