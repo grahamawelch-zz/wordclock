@@ -10,13 +10,17 @@ YELLOW = (255, 255, 0)
 CYAN = (0, 255, 255)
 MAGENTA = (255, 0, 255) # Looks like purple
 ORANGE = (255, 127, 0)
+GRANNY_SMITH_APPLE = (170,232,162)
+DARK_BLUE_SKY = (128,184,206)
+LILAC = (182,166,202)
+RHYTHM = (122,102,150) # Purple
 
 HOT = RED
 COLD = BLUE
 
 OFF = (0, 0, 0)
 DEFAULT_COLOR = WHITE
-DEFAULT_COLORS = [YELLOW, CYAN, MAGENTA, GREEN, RED, BLUE, ORANGE]
+DEFAULT_COLORS = [GRANNY_SMITH_APPLE, DARK_BLUE_SKY, LILAC, GRANNY_SMITH_APPLE, LILAC, RHYTHM, GRANNY_SMITH_APPLE, RHYTHM, DARK_BLUE_SKY]
 
 HOLIDAYS = {
   (2, 14): [RED], # Valentine's Day
@@ -133,10 +137,10 @@ def TimeToEnums(hour, minutes, seconds):
 
   # Handle Meridiem
   if hour >= 12 and hour <= 23:
-    out.append(PM)
+    meridiem = PM
   else:
     # Make sure this handles the case where it's 23:32:30+ and we round up to 24
-    out.append(AM)
+    meridiem = AM
 
   # Adjust back to 12 hours
   if hour >= 12:
@@ -172,5 +176,7 @@ def TimeToEnums(hour, minutes, seconds):
 
   if add_oclock:
     out.append(OCLOCK)
+
+  out.append(meridiem)
 
   return out
