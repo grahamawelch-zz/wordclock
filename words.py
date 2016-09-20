@@ -138,10 +138,10 @@ def TimeToEnums(hour, minutes, seconds):
 
   # Handle Meridiem
   if hour >= 12 and hour <= 23:
-    out.append(PM)
+    meridiem = PM
   else:
     # Make sure this handles the case where it's 23:32:30+ and we round up to 24
-    out.append(AM)
+    meridiem = AM
 
   # Adjust back to 12 hours
   if hour >= 12:
@@ -177,5 +177,7 @@ def TimeToEnums(hour, minutes, seconds):
 
   if add_oclock:
     out.append(OCLOCK)
+
+  out.append(meridiem)
 
   return out
